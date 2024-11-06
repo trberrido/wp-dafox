@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "df/post-taxonomies",
+  "version": "0.1.0",
+  "title": "Post terms",
+  "category": "widgets",
+  "icon": "tag",
+  "description": "Display a list of a post's terms of s specific taxonomy",
+  "supports": {
+    "html": false,
+    "color": {
+      "text": true
+    },
+    "typography": {
+      "fontSize": true,
+      "__experimentalFontWeight": true,
+      "__experimentalTextTransform": true
+    }
+  },
+  "textdomain": "df",
+  "attributes": {
+    "taxonomy": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "usesContext": [
+    "postId"
+  ],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

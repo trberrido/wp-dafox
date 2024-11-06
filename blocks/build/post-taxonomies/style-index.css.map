@@ -1,0 +1,1 @@
+{"version":3,"file":"post-taxonomies/style-index.css","mappings":";;;AAAA;EACC;EACA;EACA;AACD,C","sources":["webpack://df-blocks/./src/post-taxonomies/style.scss"],"sourcesContent":[".wp-block-df-post-taxonomies {\n\tlist-style-type: none;\n\tpadding: 0;\n\tmargin: 0;\n}"],"names":[],"sourceRoot":""}
