@@ -1,10 +1,13 @@
 .wp-block-post-template {
 
+	padding: 0!important;
+
 	.wp-block-post {
 
 		position: relative;
 		transition: background-color .2s linear;
 		min-height: 25rem;
+
 
 		display: flex;
 		flex-direction: row;
@@ -55,6 +58,7 @@
 				right: 0;
 				bottom: 0;
 				left: 0;
+				z-index: 1;
 				cursor: pointer;
 			}
 		}
