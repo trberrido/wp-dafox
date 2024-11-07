@@ -28,6 +28,7 @@ export default function Edit( { attributes, setAttributes, context } ) {
 		:
 		[]
 	, [attributes.taxonomy, context.postId] );
+
 	return (
 		<Fragment>
 			<InspectorControls key='Settings'>
