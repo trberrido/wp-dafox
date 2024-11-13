@@ -125,19 +125,6 @@
 			],
 			"fontFamilies": [
 				{
-					"name": "Title",
-					"slug": "title",
-					"fontFamily": "\"texgyreadventor\", sans-serif",
-					"fontFace": [
-						{
-							"fontFamily": "texgyreadventor",
-							"fontWeight": "700",
-							"fontStyle": "normal",
-							"src": ["file:./assets/fonts/texgyreadventor-bold.otf"]
-						}
-					]
-				},
-				{
 					"name": "Default",
 					"slug": "default",
 					"fontFamily": "\"opensans\", sans-serif",
@@ -188,7 +175,6 @@
 		"elements": {
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--title)",
 					"fontWeight": "700",
 					"lineHeight": "1"
 				}
