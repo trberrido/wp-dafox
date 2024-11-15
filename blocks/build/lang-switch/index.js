@@ -137,7 +137,7 @@ module.exports = window["wp"]["blocks"];
   \************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"df/lang-switch","version":"0.1.0","title":"Languages switcher","category":"widgets","icon":"update","description":"Add a link to the related article in the alternate language","supports":{"html":false},"usesContext":["postId"],"textdomain":"df","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"df/lang-switch","version":"0.1.0","title":"Languages switcher","category":"widgets","icon":"update","description":"Add a link to the related article in the alternate language","supports":{"html":false},"usesContext":["postId"],"textdomain":"df","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ })
 

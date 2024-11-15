@@ -35,7 +35,7 @@
 	Switch language : <?php
 
 		foreach ( $languages as $language ) :
-			echo '<' . $language['tag'] . ( isset( $language['href'] ) ? ' href="' . $language['href'] . '"' : '') . ' class="wp-block-df-lang-switch__item">' . $language['label'] . '</' . $language['tag'] . '>';
+			echo '<' . $language['tag'] . ( isset( $language['href'] ) ? ' href="' . esc_attr( $language['href'] ) . '"' : '') . ' class="wp-block-df-lang-switch__item">' . $language['label'] . '</' . $language['tag'] . '>';
 		endforeach;
 
 	?>

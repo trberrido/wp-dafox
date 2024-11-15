@@ -17,8 +17,14 @@
 .wp-block-df-lang-switch .wp-block-df-lang-switch__item {
   color: var(--wp--preset--color--neutral-000);
 }
-.wp-block-df-lang-switch .wp-block-df-lang-switch__item:not(a) {
-  background-color: var(--wp--preset--color--neutral--900);
+.wp-block-df-lang-switch .wp-block-df-lang-switch__item + .wp-block-df-lang-switch__item::before {
+  content: "|";
+  display: inline-block;
+  margin-right: var(--wp--preset--spacing--100);
+}
+
+.wp-block-df-lang-switch + * {
+  margin-block-start: 0;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
