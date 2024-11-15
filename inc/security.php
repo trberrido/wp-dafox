@@ -13,3 +13,11 @@ function df__remove_users_endpoints( $endpoints ): array {
 	return $endpoints;
 
 }
+
+/*
+	In .htacces:
+	<Files xmlrpc.php>
+		order deny,allow
+		deny from all
+	</Files>
+*/
