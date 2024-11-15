@@ -30,10 +30,6 @@ function df__register_taxonomy__client(): void {
 		'show_admin_column'		=> true
 	);
 
-	register_taxonomy(
-		'df__taxonomy__client',
-		'post',
-		$args
-	);
+	register_taxonomy( 'df__taxonomy__client', 'post', $args );
 
 }
