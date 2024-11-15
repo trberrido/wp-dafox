@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>da fox: updating</title>
+		<meta charset="utf-8" />
+		<style>
+			html { background: #242424; color: white; font-family: sans-serif; }
+			.site { display: flex; flex-direction: column; height: 100vh; justify-content: center }
+			h1::before {
+				background-image: url("data:image/svg+xml,%3Csvg width='150' height='38' viewBox='0 0 150 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29.0243 36.7907V3.05176e-05H22.403V11.6496C20.4614 9.50885 17.2752 8.21446 13.7903 8.21446C6.0737 8.21446 0 14.6864 0 22.9506C0 31.1153 6.02391 37.4379 13.8401 37.4379C17.5739 37.4379 20.312 36.1933 22.9506 33.2062V36.7907H29.0243ZM22.9008 22.8511C22.9008 27.6304 19.3661 31.3642 14.8855 31.3642C10.2556 31.3642 6.67111 27.5308 6.67111 22.6519C6.67111 17.9722 10.2058 14.2882 14.7362 14.2882C19.3661 14.2882 22.9008 18.022 22.9008 22.8511ZM61.9816 36.7907V9.21015H55.9079V12.8942C53.6178 9.85735 50.8797 8.56295 46.8969 8.56295C38.7323 8.56295 32.8577 14.6864 32.8577 23.1C32.8577 31.414 38.6825 37.4379 46.7476 37.4379C50.6307 37.4379 53.2693 36.1933 55.9079 33.2062V36.7907H61.9816ZM55.7088 23.1996C55.7088 27.7797 52.7217 31.3642 47.6935 31.3642C42.8644 31.3642 39.5288 28.0784 39.5288 23.2494C39.5288 18.2211 42.8644 14.6366 47.5939 14.6366C52.3234 14.6366 55.7088 18.1713 55.7088 23.1996ZM91.8024 6.37244V0.0995993C91.0058 3.05176e-05 90.6076 3.05176e-05 90.1595 3.05176e-05C85.3802 3.05176e-05 81.7957 2.43947 81.049 9.70799H78.6593V15.2341H81.049V36.7907H87.6703V15.2341H91.4041V9.70799H87.6703C87.7201 7.21877 88.5664 6.37244 91.1552 6.37244H91.8024ZM122.42 23.1996C122.42 14.9851 115.998 8.56295 107.684 8.56295C99.6683 8.56295 93.0967 15.0847 93.0967 23.0004C93.0967 30.9659 99.6683 37.4379 107.733 37.4379C115.749 37.4379 122.42 30.9659 122.42 23.1996ZM115.749 23.0004C115.749 27.6304 112.164 31.3642 107.783 31.3642C103.303 31.3642 99.7678 27.6304 99.7678 22.9009C99.7678 18.3705 103.402 14.6367 107.733 14.6367C112.164 14.6367 115.749 18.4203 115.749 23.0004ZM150 36.7907L140.193 22.5524L148.606 9.21015H141.139L136.26 17.5241L131.281 9.21015H123.814L132.277 22.5524L122.519 36.7907H130.485L136.26 27.3317L142.035 36.7907H150Z' fill='white'/%3E%3C/svg%3E%0A");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				content: '';
+				display: block;
+				width: 100%;
+				height: calc(37.4rem/16);
+			}
+			h1 {
+				font-size: 0;
+			}
+			p { display: flex; flex-direction: row; gap: .5rem; align-items: center; justify-content: center; color: grey}
+			p::after {
+				-webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='icon-50' width='24' height='24' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' name='loader' color='%232A2C2B' class='standard standard-loader-2'%3E%3Ctitle%3Eicon-50%3C/title%3E%3Cpath d='M21 12a9 9 0 1 1-6.219-8.56'%3E%3CanimateTransform attributeName='transform' type='rotate' from='0 12 12' to='360 12 12' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E%3C/path%3E%3C/svg%3E");
+				-webkit-mask-repeat: no-repeat;
+				-webkit-mask-size: contain;
+				-webkit-mask-position: center;
+				mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='icon-50' width='24' height='24' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' name='loader' color='%232A2C2B' class='standard standard-loader-2'%3E%3Ctitle%3Eicon-50%3C/title%3E%3Cpath d='M21 12a9 9 0 1 1-6.219-8.56'%3E%3CanimateTransform attributeName='transform' type='rotate' from='0 12 12' to='360 12 12' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E%3C/path%3E%3C/svg%3E");
+				mask-repeat: no-repeat;
+				mask-size: contain;
+				mask-position: center;
+				background-color: white;
+				content: '';
+				display: block;
+				width: 1rem;
+				height: .8rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="site">
+			<h1>da fox</h1>
+			<p>status: updating</p>
+		</div>
+	</body>
+</html>
