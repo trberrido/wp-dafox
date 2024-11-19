@@ -15,9 +15,13 @@ function df__remove_users_endpoints( $endpoints ): array {
 }
 
 /*
-	In .htacces:
+	- Disallow xmlrpc.php access, in .htacces:
 	<Files xmlrpc.php>
 		order deny,allow
 		deny from all
 	</Files>
+
+	- Disallow file editing, in wp-config.php:
+	define( 'DISALLOW_FILE_EDIT', true );
+	define( 'DISALLOW_FILE_MODS', true );
 */
