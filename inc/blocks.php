@@ -13,3 +13,40 @@ function df__register_blocks_types(): void {
 	}
 
 }
+
+add_action( 'init', 'df__block_binding__register_source' );
+
+function df__block_binding__register_source(): void {
+	register_block_bindings_source(
+		'df/year',
+		array(
+			'label'					=> 'Display current year',
+			'get_value_callback'	=> 'df__binding_source__current_year'
+	 ) );
+}
+
+function df__binding_source__current_year(): string {
+	return 'da fox ' . date( 'Y' );
+}
+
+add_action( 'init', 'df__enqueue_blocks_styles' );
+function df__enqueue_blocks_styles(): void {
+
+	$blocks_css_directory = '/assets/css/blocks/';
+	foreach ( glob( get_stylesheet_directory() . $blocks_css_directory . '*', GLOB_ONLYDIR ) as $directory ) {
+		$namespace = basename( $directory );
+		foreach ( glob( $directory . '/*.css' ) as $css_file ) {
+			$blockname = basename( $css_file, '.css' );
+			wp_enqueue_block_style(
+				$namespace . '/' . $blockname,
+				array(
+					'handle'	=> 'df-' . $namespace . '-' . $blockname,
+					'src'		=> get_template_directory_uri() . $blocks_css_directory . $namespace . '/' . $blockname . '.css',
+					'path'		=> get_template_directory() . $blocks_css_directory . $namespace . '/' . $blockname . '.css',
+					'ver'		=> filemtime( get_template_directory() . $blocks_css_directory . $namespace . '/' . $blockname . '.css' )
+				)
+			);
+		}
+	}
+
+}
