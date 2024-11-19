@@ -7,7 +7,7 @@ function df__metas(): void {
 	if ( is_singular( 'post' ) ){
 		$image = get_the_post_thumbnail_url();
 	} else {
-		$image = get_template_directory_uri() . '/screenshot.png';
+		$image = get_site_icon_url();
 	}
 
 	if ( is_home() ) {
@@ -39,7 +39,7 @@ add_action( 'template_redirect', 'df__remove_archives' );
 
 function df__remove_archives(): void {
 	if ( is_archive() ) {
-		wp_redirect( home_url( '/' ), 301 );
+		wp_redirect( esc_url( home_url( '/' ) ), 301 );
 		exit;
 	}
 }
