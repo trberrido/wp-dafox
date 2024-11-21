@@ -15,18 +15,32 @@ function df__register_blocks_types(): void {
 }
 
 add_action( 'init', 'df__block_binding__register_source' );
-
 function df__block_binding__register_source(): void {
-	register_block_bindings_source(
-		'df/year',
-		array(
+
+	$sources = array(
+		'df/year' => array(
 			'label'					=> 'Display current year',
 			'get_value_callback'	=> 'df__binding_source__current_year'
-	 ) );
+		),
+		'df/site-description' => array(
+			'label'					=> 'Display the site description',
+			'get_value_callback'	=> 'df__binding_source__site_description'
+		)
+	);
+
+	foreach ( $sources as $source_name => $source_properties ) {
+		register_block_bindings_source( $source_name, $source_properties );
+	};
+
 }
 
 function df__binding_source__current_year(): string {
 	return 'da fox ' . date( 'Y' );
+}
+
+function df__binding_source__site_description(): string {
+	// cf inc/options.php
+	return get_option( 'df__site_description', '' );
 }
 
 add_action( 'init', 'df__enqueue_blocks_styles' );
