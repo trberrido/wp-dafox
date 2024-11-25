@@ -1,0 +1,2 @@
+<?php
+return ['domain'=>NULL,'plural-forms'=>NULL,'language'=>'fr_FR','project-id-version'=>'','pot-creation-date'=>'2024-11-23T23:56:31+00:00','po-revision-date'=>'2024-11-23T23:56:31+00:00','messages'=>['Page not found'=>'Aucun contenu','Error <em>404</em>: This page has no content.<br><a href="%s">Return to the homepage</a>.'=>'Erreur <em>404</em> : cette page n’a aucun contenu.<br><a href="%s">Revenir à la page d\'accueil</a>.']];

@@ -1,7 +1,8 @@
 <?php defined('ABSPATH') or die();
 
-add_action( 'wp_head', 'df__metas' );
+add_post_type_support( 'page', 'excerpt' );
 
+add_action( 'wp_head', 'df__metas' );
 function df__metas(): void {
 
 	if ( is_singular( 'post' ) ){
@@ -13,6 +14,8 @@ function df__metas(): void {
 	if ( is_home() ) {
 		$description = get_bloginfo( 'description' );
 		$title = 'da fox';
+	} else if ( is_404() ) {
+		$description = __( 'Page not found', 'df' );
 	} else {
 		$description = strip_tags( get_the_excerpt() );
 		$title = get_the_title();
@@ -44,15 +47,10 @@ function df__remove_archives(): void {
 	}
 }
 
-add_action( 'do_feed_rdf', 'df__disable_feed', 1 );
-add_action( 'do_feed_rss', 'df__disable_feed', 1 );
-add_action( 'do_feed_rss2', 'df__disable_feed', 1 );
-add_action( 'do_feed_atom', 'df__disable_feed', 1 );
-add_action( 'do_feed_rss2_comments', 'df__disable_feed', 1 );
-add_action( 'do_feed_atom_comments', 'df__disable_feed', 1 );
 remove_action( 'wp_head', 'feed_links_extra', 3 );
 remove_action( 'wp_head', 'feed_links', 2 );
+remove_action( 'wp_head', 'rsd_link' );
 
-function df__disable_feed():void {
+function df__disable_feed(): void {
 	wp_die( esc_attr( '<a href="' . esc_url( home_url( '/' ) ) . '">' ) );
 }
