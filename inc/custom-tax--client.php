@@ -1,7 +1,6 @@
 <?php defined('ABSPATH') or die();
 
 add_action( 'init', 'df__register_taxonomy__client' );
-
 function df__register_taxonomy__client(): void {
 
 	$labels = array(
