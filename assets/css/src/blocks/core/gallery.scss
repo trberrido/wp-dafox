@@ -1,0 +1,11 @@
+@media (max-width: 100rem) {
+	.wp-block-gallery.has-nested-images.columns-4 > figure {
+		width: calc(50% - var(--wp--style--unstable-gallery-gap, 16px)*.75)!important;
+	}
+}
+
+@media (max-width: 48.875rem) {
+	.wp-block-gallery.has-nested-images > figure {
+		width: 100%!important;
+	}
+}

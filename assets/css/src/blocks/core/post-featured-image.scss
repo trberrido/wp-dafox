@@ -1,0 +1,5 @@
+@use '../../common/loader.scss' as loader;
+
+.wp-block-post-featured-image {
+	@include loader.background;
+}

@@ -1,0 +1,18 @@
+@use '../../common/link.scss' as link;
+
+p > em {
+	font-style: normal;
+	background-color: var(--wp--preset--color--neutral-900);
+	border-radius: .25rem;
+	padding: 0 var(--wp--preset--spacing--050);
+}
+
+p.is-style-highlight {
+	font-weight: 700;
+	font-size: var(--wp--preset--font-size--xl);
+	line-height: 1.1
+}
+
+p.has-xl-font-size { line-height: 1.1 }
+
+p:not(.wp-block-site-title) a:hover { @include link.hover }

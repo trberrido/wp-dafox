@@ -1,3 +1,5 @@
+@use '../../common/link.scss' as link;
+
 .wp-block-post-template {
 
 	padding: 0!important;
@@ -5,43 +7,30 @@
 	.wp-block-post {
 
 		position: relative;
-		transition: background-color .2s linear;
-		min-height: 25rem;
 
-
-		display: flex;
-		flex-direction: row;
-
-		@media (max-width: 960px) {
-			flex-direction: column-reverse;
-		}
+		.wp-block-post-featured-image > img { transition: transform .2s linear }
 
 		&:hover {
 
 			cursor: pointer;
 			background-color: var(--wp--preset--color--neutral-700);
 
-			.wp-block-post-featured-image > img { height: 110%!important }
+			.wp-block-column.df-aside-column,
+			.wp-block-column.df-content-column {
+				transition: background-color .2s linear;
+				background-color: var(--wp--preset--color--neutral-700);
+			}
+
+			.wp-block-post-featured-image > img { transform: scale(1.1) }
 			.wp-block-group {
 				.df-see-more { opacity: 1 }
 			}
 
 		}
 
-		.wp-block-post-featured-image {
-			align-self: stretch;
-			overflow: hidden;
-			display: flex;
-			align-items: center;
-
-			img { transition: height .2s }
-		}
-
 		.wp-block-group {
 
 			position: static;
-			width: 30rem;
-			flex-shrink: 0;
 
 			.df-see-more {
 				opacity: 0;
@@ -52,16 +41,10 @@
 			}
 
 			.wp-block-post-title > a::before {
-				content: '';
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				z-index: 1;
-				cursor: pointer;
+				@include link.click-parent;
 			}
 		}
 
 	}
+
 }

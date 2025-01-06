@@ -9,20 +9,28 @@
 	height: calc(37.4rem/16);
 }
 
-h1.wp-block-site-title {
-	font-size: 0;
+h1.wp-block-site-title { font-size: 0 }
+
+p.wp-block-site-title {
+
+	position: relative;
+
+	& > a {
+		font-size: 0;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+
 }
 
-p.wp-block-site-title { position: relative }
+@media (max-width: 48.875rem) {
 
-p.wp-block-site-title > a {
-	font-size: 0;
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
+	.wp-block-site-title::before { margin-top: var(--wp--preset--spacing--300) }
+
 }

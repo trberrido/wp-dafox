@@ -1,0 +1,10 @@
+@use '../../common/link.scss' as link;
+
+.wp-block-df-menu-fetcher {
+	 & > ul {
+		gap: var(--wp--preset--spacing--300);
+		& > li {
+			& > a:hover { @include link.hover }
+		}
+	}
+}
