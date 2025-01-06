@@ -1,8 +1,6 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit;
 
 add_action( 'admin_init', 'df__options__register' );
-
-// Add custom setting to General Settings
 function df__options__register(): void {
 
 	register_setting(
@@ -32,15 +30,13 @@ function df__options__register(): void {
 
 }
 
-function df__options__section__callback() {
+function df__options__section__callback(): void {
 	echo '<p>Add an extended description with rich text formatting</p>';
 }
 
 function df__options__site_description__field__callback(): void {
-
-	$value = get_option( 'df__site_description', '' );
 	wp_editor(
-		$value,
+		get_option( 'df__site_description', '' ),
 		'df__site_description',
 		array(
 			'textarea_name' => 'df__site_description',
@@ -49,5 +45,4 @@ function df__options__site_description__field__callback(): void {
 			'textarea_rows' => 5,
 		)
 	);
-
 }
