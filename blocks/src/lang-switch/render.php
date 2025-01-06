@@ -1,6 +1,10 @@
 <?php
 
-	$current_url = get_the_permalink();
+	if ( is_home() || is_404() ){
+		$current_url = home_url( '/' );
+	} else {
+		$current_url = get_the_permalink();
+	}
 
 	if ( get_locale() === 'en_US' ){
 		$languages = array(

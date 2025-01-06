@@ -1,7 +1,5 @@
 <?php
 
-	//var_dump($block);
-
 	$taxonomy = $attributes['taxonomy'];
 	$post_id = $block->context['postId'];
 

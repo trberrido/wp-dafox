@@ -2,7 +2,6 @@ import { Fragment } from '@wordpress/element';
 import { Panel, PanelBody, SelectControl } from '@wordpress/components';
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
 import { useSelect } from '@wordpress/data';
-import './editor.scss';
 
 const SelectControlTaxonomy = ( { attributes, setAttributes } ) => {
 

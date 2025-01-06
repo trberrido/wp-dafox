@@ -1,0 +1,1 @@
+{"version":3,"file":"menu-fetcher/index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://df-blocks/./src/menu-fetcher/editor.scss"],"sourcesContent":[".wp-block-df-menu-fetcher a {\n\tpointer-events: none;\n}"],"names":[],"sourceRoot":""}
