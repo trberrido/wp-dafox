@@ -6,12 +6,12 @@ add_action( 'after_setup_theme', 'df__cache__init' );
 add_action( 'init', 'df__cache__get_page' );
 add_action( 'template_redirect', 'df__cache__start' );
 add_action( 'shutdown', 'df__cache__stop' );
-add_action( 'save_post', 'df__cache__clear', 10, 1 );
-add_action( 'delete_post', 'df__cache__clear', 10, 1 );
+add_action( 'save_post', 'df__cache__clear' );
+add_action( 'delete_post', 'df__cache__clear' );
 
 function df__cache__dont_run(): bool {
 	if ( is_admin()
-	|| ( !is_singular(['post', 'page']) && !is_home() )
+	|| ( !is_singular( ['post', 'page'] ) && !is_home() )
 	|| defined( 'DOING_AJAX' ) || defined( 'DOING_CRON' ) || wp_is_serving_rest_request() ){
 		return true;
 	}
@@ -48,10 +48,12 @@ function df__cache__start(): void {
 	}
 
 	$cache_file = df__cache__get_file();
+
 	if ( !file_exists( $cache_file )
 	|| time() - filemtime( $cache_file ) > DF__CACHE__TIME ){
 		wp_delete_file( $cache_file );
 		ob_start( 'df__cache__output' );
+		echo '<!--cached-->';
 	}
 
 }
@@ -69,7 +71,12 @@ function df__cache__output( $content ): bool | string {
 
 function df__cache__get_page(): void {
 
+	if ( df__cache__dont_run() ){
+		return ;
+	}
+
 	$cache_file = df__cache__get_file();
+
 	if ( file_exists( $cache_file )
 		&& time() - filemtime( $cache_file ) < DF__CACHE__TIME ){
 		header('Content-Type: text/html; charset=UTF-8');
