@@ -1,0 +1,56 @@
+<!-- wp:df/lang-switch /-->
+
+<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|000","left":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+	<!-- wp:column {"verticalAlignment":"stretch","width":"20rem","backgroundColor":"neutral-800"} -->
+	<div class="wp-block-column is-vertically-aligned-stretch has-neutral-800-background-color has-background" style="flex-basis:20rem">
+		<!-- wp:template-part {"slug":"header-home","theme":"dafox","tagName":"header","area":"header"} /-->
+	</div>
+	<!-- /wp:column -->
+
+	<!-- wp:column {"verticalAlignment":"stretch","width":"","style":{"spacing":{"blockGap":"var:preset|spacing|000","padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+	<div class="wp-block-column is-vertically-aligned-stretch" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+		<!-- wp:query {"queryId":3,"query":{"perPage":"99","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"tagName":"main"} -->
+		<main class="wp-block-query">
+
+			<!-- wp:post-template {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default","columnCount":3}} -->
+			<!-- wp:columns {"className":"df-content df-post-header","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"blockGap":{"top":"0","left":"0"},"margin":{"top":"0","bottom":"0"}}}} -->
+			<div class="wp-block-columns df-content df-post-header" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+				<!-- wp:column {"width":"","className":"df-content-column","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+				<div class="wp-block-column df-content-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+					<!-- wp:group {"tagName":"article","className":"df-card__content","style":{"spacing":{"padding":{"top":"var:preset|spacing|600","bottom":"var:preset|spacing|600","left":"var:preset|spacing|600","right":"var:preset|spacing|600"}},"layout":{"selfStretch":"fit","flexSize":""}},"layout":{"type":"flex","orientation":"vertical"}} -->
+					<article class="wp-block-group df-card__content" style="padding-top:var(--wp--preset--spacing--600);padding-right:var(--wp--preset--spacing--600);padding-bottom:var(--wp--preset--spacing--600);padding-left:var(--wp--preset--spacing--600)">
+						<!-- wp:post-title {"isLink":true,"fontSize":"xl"} /-->
+						<!-- wp:df/post-taxonomies {"taxonomy":"df__taxonomy__client","style":{"elements":{"link":{"color":{"text":"var:preset|color|neutral-000"}}},"typography":{"fontWeight":"300","textTransform":"uppercase","fontStyle":"normal"}},"textColor":"neutral-000"} /-->
+						<!-- wp:df/post-taxonomies {"taxonomy":"post_tag","style":{"elements":{"link":{"color":{"text":"var:preset|color|neutral-000"}}},"typography":{"fontWeight":"700","textTransform":"none","fontStyle":"normal"}},"textColor":"neutral-000"} /-->
+						<!-- wp:post-excerpt {"showMoreOnNewLine":false,"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}}} /-->
+						<!-- wp:pattern {"slug":"df/btn-more"} /-->
+					</article>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:column -->
+
+				<!-- wp:column {"width":"","className":"df-aside-column","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+				<div class="wp-block-column df-aside-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+					<!-- wp:post-featured-image {"aspectRatio":"auto","width":"","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"layout":{"selfStretch":"fit","flexSize":null}}} /-->
+				</div>
+				<!-- /wp:column -->
+
+			</div>
+			<!-- /wp:columns -->
+
+			<!-- /wp:post-template -->
+
+		</main>
+		<!-- /wp:query -->
+
+		<!-- wp:template-part {"slug":"footer","theme":"dafox","area":"footer"} /-->
+
+	</div>
+	<!-- /wp:column -->
+
+</div>
+<!-- /wp:columns -->

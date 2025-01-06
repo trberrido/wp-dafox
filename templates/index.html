@@ -1,0 +1,50 @@
+<!-- wp:df/lang-switch /-->
+
+<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|000","left":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<div class="wp-block-columns" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+	<!-- wp:column {"verticalAlignment":"stretch","width":"20rem","backgroundColor":"neutral-800"} -->
+	<div class="wp-block-column is-vertically-aligned-stretch has-neutral-800-background-color has-background" style="flex-basis:20rem">
+		<!-- wp:template-part {"tagName": "div", "slug":"header-single","theme":"dafox","area":"header"} /-->
+	</div>
+	<!-- /wp:column -->
+
+	<!-- wp:column {"verticalAlignment":"stretch","width":"","style":{"spacing":{"blockGap":"var:preset|spacing|000","padding":{"top":"0","bottom":"0","left":"var:preset|spacing|000","right":"var:preset|spacing|000"}}}} -->
+	<div class="wp-block-column is-vertically-aligned-stretch" style="padding-top:0;padding-right:var(--wp--preset--spacing--000);padding-bottom:0;padding-left:var(--wp--preset--spacing--000)">
+
+		<!-- wp:columns {"className":"df-content df-post-header","style":{"spacing":{"blockGap":{"top":"0","left":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"backgroundColor":"neutral-700"} -->
+		<div class="wp-block-columns df-content df-post-header has-neutral-700-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+			<!-- wp:column {"width":"","className":"df-content-column","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"backgroundColor":"neutral-700"} -->
+			<div class="wp-block-column df-content-column has-neutral-700-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+				<!-- wp:group {"tagName":"header","className":"df-card__content","style":{"layout":{"selfStretch":"fixed","flexSize":null},"spacing":{"padding":{"top":"var:preset|spacing|600","bottom":"var:preset|spacing|600","left":"var:preset|spacing|600","right":"var:preset|spacing|600"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+				<header class="wp-block-group df-card__content" style="padding-top:var(--wp--preset--spacing--600);padding-right:var(--wp--preset--spacing--600);padding-bottom:var(--wp--preset--spacing--600);padding-left:var(--wp--preset--spacing--600)">
+					<!-- wp:post-title {"level":1,"fontSize":"xl"} /-->
+					<!-- wp:df/post-taxonomies {"taxonomy":"df__taxonomy__client","style":{"elements":{"link":{"color":{"text":"var:preset|color|neutral-000"}}},"typography":{"fontWeight":"300","textTransform":"uppercase","fontStyle":"normal"}},"textColor":"neutral-000"} /-->
+					<!-- wp:df/post-taxonomies {"taxonomy":"post_tag","style":{"elements":{"link":{"color":{"text":"var:preset|color|neutral-000"}}},"typography":{"fontWeight":"700","textTransform":"none","fontStyle":"normal"}},"textColor":"neutral-000"} /-->
+					<!-- wp:post-excerpt {"showMoreOnNewLine":false,"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}}} /-->
+				</header>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:column -->
+
+			<!-- wp:column {"width":"","className":"df-aside-column","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"backgroundColor":"transparent"} -->
+			<div class="wp-block-column df-aside-column has-transparent-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+				<!-- wp:post-featured-image {"aspectRatio":"auto","width":"","className":"df-card__image","style":{"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"layout":{"selfStretch":"fill","flexSize":null}}} /-->
+			</div>
+			<!-- /wp:column -->
+
+		</div>
+		<!-- /wp:columns -->
+
+		<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+		<main class="wp-block-group"><!-- wp:post-content /--></main>
+		<!-- /wp:group -->
+
+		<!-- wp:template-part {"slug":"footer","theme":"dafox","area":"footer"} /-->
+
+	</div>
+	<!-- /wp:column -->
+
+</div>
+<!-- /wp:columns -->
