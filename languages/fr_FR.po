@@ -12,18 +12,22 @@ msgstr ""
 "Language: fr_FR\n"
 
 #. Theme Name of the theme
+#: style.css
 msgid "da fox"
 msgstr ""
 
 #. Theme URI of the theme
+#: style.css
 msgid "https://github.com/trberrido/wp-dafox"
 msgstr ""
 
 #. Author of the theme
+#: style.css
 msgid "TRB"
 msgstr ""
 
 #. Author URI of the theme
+#: style.css
 msgid "https://dafox.co"
 msgstr ""
 
@@ -37,6 +41,7 @@ msgctxt "Pattern description"
 msgid "Content of the 404 template"
 msgstr ""
 
+#: inc/seo.php:18
 #: patterns/content-404.php:17
 msgid "Page not found"
 msgstr "Aucun contenu"
@@ -189,4 +194,30 @@ msgstr ""
 #: theme.json
 msgctxt "Template part name"
 msgid "Footer"
+msgstr ""
+
+#: patterns/btn-more.php
+msgctxt "Pattern title"
+msgid "Button More"
+msgstr ""
+
+#: patterns/btn-more.php
+msgctxt "Pattern description"
+msgid "Basic More button"
+msgstr ""
+
+#: patterns/btn-more.php:12
+msgid "More +"
+msgstr "Voir +"
+
+#: blocks/build/menu-fetcher/block.json
+#: blocks/src/menu-fetcher/block.json
+msgctxt "block title"
+msgid "Menu fetcher"
+msgstr ""
+
+#: blocks/build/menu-fetcher/block.json
+#: blocks/src/menu-fetcher/block.json
+msgctxt "block description"
+msgid "Display a classic menu"
 msgstr ""

@@ -1,5 +1,5 @@
-# Copyright (C) 2024 TRB
-# This file is distributed under the .
+# Copyright (C) 2025 TRB
+# This file is distributed under the same license as the da fox theme.
 msgid ""
 msgstr ""
 "Project-Id-Version: da fox 1.0\n"
@@ -9,25 +9,48 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-11-24T00:47:10+00:00\n"
+"POT-Creation-Date: 2025-01-02T19:06:40+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.8.1\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: df\n"
 
 #. Theme Name of the theme
+#: style.css
 msgid "da fox"
 msgstr ""
 
 #. Theme URI of the theme
+#: style.css
 msgid "https://github.com/trberrido/wp-dafox"
 msgstr ""
 
 #. Author of the theme
+#: style.css
 msgid "TRB"
 msgstr ""
 
 #. Author URI of the theme
+#: style.css
 msgid "https://dafox.co"
+msgstr ""
+
+#: inc/seo.php:18
+#: patterns/content-404.php:17
+msgid "Page not found"
+msgstr ""
+
+#: patterns/btn-more.php
+msgctxt "Pattern title"
+msgid "Button More"
+msgstr ""
+
+#: patterns/btn-more.php
+msgctxt "Pattern description"
+msgid "Basic More button"
+msgstr ""
+
+#: patterns/btn-more.php:12
+msgid "More +"
 msgstr ""
 
 #: patterns/content-404.php
@@ -38,10 +61,6 @@ msgstr ""
 #: patterns/content-404.php
 msgctxt "Pattern description"
 msgid "Content of the 404 template"
-msgstr ""
-
-#: patterns/content-404.php:17
-msgid "Page not found"
 msgstr ""
 
 #: patterns/content-404.php:24
@@ -58,6 +77,18 @@ msgstr ""
 #: blocks/src/lang-switch/block.json
 msgctxt "block description"
 msgid "Add a link to the related article in the alternate language"
+msgstr ""
+
+#: blocks/build/menu-fetcher/block.json
+#: blocks/src/menu-fetcher/block.json
+msgctxt "block title"
+msgid "Menu fetcher"
+msgstr ""
+
+#: blocks/build/menu-fetcher/block.json
+#: blocks/src/menu-fetcher/block.json
+msgctxt "block description"
+msgid "Display a classic menu"
 msgstr ""
 
 #: blocks/build/post-taxonomies/block.json
