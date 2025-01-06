@@ -39,7 +39,6 @@ function df__metas(): void {
 }
 
 add_action( 'template_redirect', 'df__remove_archives' );
-
 function df__remove_archives(): void {
 	if ( is_archive() ) {
 		wp_redirect( esc_url( home_url( '/' ) ), 301 );
@@ -50,7 +49,3 @@ function df__remove_archives(): void {
 remove_action( 'wp_head', 'feed_links_extra', 3 );
 remove_action( 'wp_head', 'feed_links', 2 );
 remove_action( 'wp_head', 'rsd_link' );
-
-function df__disable_feed(): void {
-	wp_die( esc_attr( '<a href="' . esc_url( home_url( '/' ) ) . '">' ) );
-}
