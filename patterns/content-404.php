@@ -9,8 +9,8 @@
 ?>
 <!-- wp:group {"backgroundColor":"neutral-700","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-neutral-700-background-color has-background">
-	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|600","bottom":"var:preset|spacing|600","left":"var:preset|spacing|600","right":"var:preset|spacing|600"}},"layout":{"selfStretch":"fit","flexSize":""}},"layout":{"type":"flex","orientation":"vertical"}} -->
-	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--600);padding-right:var(--wp--preset--spacing--600);padding-bottom:var(--wp--preset--spacing--600);padding-left:var(--wp--preset--spacing--600)">
+	<!-- wp:group {"tagName":"main", "style":{"spacing":{"padding":{"top":"var:preset|spacing|600","bottom":"var:preset|spacing|600","left":"var:preset|spacing|600","right":"var:preset|spacing|600"}},"layout":{"selfStretch":"fit","flexSize":""}},"layout":{"type":"flex","orientation":"vertical"}} -->
+	<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--600);padding-right:var(--wp--preset--spacing--600);padding-bottom:var(--wp--preset--spacing--600);padding-left:var(--wp--preset--spacing--600)">
 
 		<!-- wp:heading {"level":1} -->
 		<h1 class="wp-block-heading">
@@ -32,7 +32,7 @@
 		<div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 
-	</div>
+	</main>
 	<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
