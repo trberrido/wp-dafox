@@ -2,6 +2,14 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"settings": {
+		"custom": {
+			"width": {
+				"column-content": "30rem"
+			},
+			"height": {
+				"post-header": "25rem"
+			}
+		},
 		"color": {
 			"customDuotone": false,
 			"customGradient": false,
@@ -18,6 +26,11 @@
 					"color": "#FFFFFF",
 					"name": "Neutral 000 (text)",
 					"slug": "neutral-000"
+				},
+				{
+					"color": "#E7E7E7",
+					"name": "Neutral 100",
+					"slug": "neutral-100"
 				},
 				{
 					"color": "#535353",
@@ -73,7 +86,7 @@
 				},
 				{
 					"name": "1.5rem",
-					"size": ".25rem",
+					"size": "1.5rem",
 					"slug": "400"
 				},
 				{
@@ -157,12 +170,23 @@
 	},
 	"templateParts": [
 		{
+			"area": "header",
+			"name": "header-home",
+			"title": "Header home"
+		},
+		{
+			"area": "header",
+			"name": "header-single",
+			"title": "Header single"
+		},
+		{
 			"area": "footer",
 			"name": "footer",
-			"title": "footer"
+			"title": "Footer"
 		}
 	],
 	"styles":{
+		"css": ".wp-site-blocks { max-width: 120rem }",
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--default)",
 			"fontSize": "var(--wp--preset--font-size--md)",
@@ -191,7 +215,14 @@
 				}
 			},
 			"core/paragraph": {
-				"css": "& strong { font-weight: 700 }"
+				"css": "& strong { font-weight: 700 }",
+				"elements": {
+					"link": {
+						"color": {
+							"text": "white"
+						}
+					}
+				}
 			},
 			"core/post-title": {
 				"elements": {
