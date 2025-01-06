@@ -11,6 +11,4 @@ function console(): void {
 	}
 	echo '</pre>';
 
-	exit ;
-
 }
