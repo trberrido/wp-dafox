@@ -14,6 +14,8 @@ function df__remove_users_endpoints( $endpoints ): array {
 
 }
 
+remove_action( 'wp_head', 'wp_generator' );
+
 /*
 	- Disallow xmlrpc.php access, in .htacces:
 	<Files xmlrpc.php>
