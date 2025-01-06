@@ -1,5 +1,7 @@
 # wp-dafox
 
+Tailored theme for https://dafox.co
+
 ## Features
 ### SEO
 - OGP tags
@@ -7,15 +9,16 @@
 - canonical URL
 - disable archives
 ### Performance
-- page caching
+- basic page caching
 - image: AVIF / WEBP formats
-- CSS : load required files only
-- no plugin required
 - disable auto feeds
-- lazy loading / resize images: WordPress builtin
 
 ### Security
 - REST API: block user enumeration
+
+### Misc
+- basic multilanguage switch
+- use the classic menu as a block
 
 ## Outside of WordPress scope
 ### Performances
@@ -23,7 +26,10 @@
 - OPCache
 - http/2
 ### Security
-- .htaccess: disable xmlprc
+- .htaccess:
+	- disable xmlprc
+	- limit access for wp-login.php
 
 ## References
-
+- https://github.com/password123456/setup-wordpress-with-security-best-practice
+- https://github.com/cnumr/best-practices/?tab=readme-ov-file
