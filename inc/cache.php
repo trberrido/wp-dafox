@@ -53,7 +53,6 @@ function df__cache__start(): void {
 	|| time() - filemtime( $cache_file ) > DF__CACHE__TIME ){
 		wp_delete_file( $cache_file );
 		ob_start( 'df__cache__output' );
-		echo '<!--cached-->';
 	}
 
 }
