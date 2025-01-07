@@ -49,3 +49,18 @@ function df__remove_archives(): void {
 remove_action( 'wp_head', 'feed_links_extra', 3 );
 remove_action( 'wp_head', 'feed_links', 2 );
 remove_action( 'wp_head', 'rsd_link' );
+
+add_filter(
+    'wp_sitemaps_add_provider',
+    function( $provider, $name ) {
+        if ( 'users' === $name ) {
+            return false;
+        }
+		if ( 'taxonomies' === $name ) {
+			return false;
+		}
+        return $provider;
+    },
+    10,
+    2
+);
