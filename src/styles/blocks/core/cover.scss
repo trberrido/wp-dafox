@@ -1,0 +1,43 @@
+@use '../../common/loader.scss' as loader;
+@use '../../common/link.scss' as link;
+
+.wp-block-cover {
+
+	@include loader.background;
+
+	position: relative;
+
+	.wp-block-cover__inner-container p {
+
+		width: fit-content;
+		margin: auto;
+
+		a {
+
+			font-size: var(--wp--preset--font-size--md);
+			font-weight: 700;
+			text-decoration: none;
+			background-color: var(--wp--preset--color--neutral-600);
+			padding: var(--wp--preset--spacing--300) var(--wp--preset--spacing--400);
+
+			&:hover {
+
+				background-color: var(--wp--preset--color--neutral-800);
+
+				&::before {
+					background-color: var(--wp--preset--color--neutral-900);
+					opacity: .9;
+				}
+			}
+
+			&::before {
+				@include link.click-parent;
+				z-index: -1;
+				transition: background-color .2s, opacity .2s;
+			}
+
+		}
+
+	}
+
+}
