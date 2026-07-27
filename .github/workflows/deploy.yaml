@@ -29,6 +29,6 @@ jobs:
           echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           rsync -az --delete \
-            -e "ssh -p ${{ PORT }} -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no" \
+            -e "ssh -p $PORT -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no" \
             release/ \
             $USER@$HOST:$DEST
