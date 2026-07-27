@@ -8,6 +8,7 @@
 	"scripts": {
 		"build:css": "sass --no-source-map --style=compressed src/styles:assets/styles",
 		"build:blocks": "wp-scripts build --webpack-copy-php && wp-scripts build-blocks-manifest --input=assets/blocks",
+		"package": "node scripts/package.js",
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
