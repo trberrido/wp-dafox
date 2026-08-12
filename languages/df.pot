@@ -1,4 +1,4 @@
-# Copyright (C) 2025 TRB
+# Copyright (C) 2026 TRB
 # This file is distributed under the same license as the da fox theme.
 msgid ""
 msgstr ""
@@ -9,9 +9,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-01-02T19:06:40+00:00\n"
+"POT-Creation-Date: 2026-08-12T16:30:42+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.11.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: df\n"
 
 #. Theme Name of the theme
@@ -34,9 +34,23 @@ msgstr ""
 msgid "https://dafox.co"
 msgstr ""
 
-#: inc/seo.php:18
+#: functions/seo.php:18
 #: patterns/content-404.php:17
 msgid "Page not found"
+msgstr ""
+
+#: patterns/btn-home.php
+msgctxt "Pattern title"
+msgid "Button Home"
+msgstr ""
+
+#: patterns/btn-home.php
+msgctxt "Pattern description"
+msgid "Basic Back Home button"
+msgstr ""
+
+#: patterns/btn-home.php:14
+msgid "← Back Home"
 msgstr ""
 
 #: patterns/btn-more.php
@@ -64,43 +78,42 @@ msgid "Content of the 404 template"
 msgstr ""
 
 #: patterns/content-404.php:24
+#, php-format
 msgid "Error <em>404</em>: This page has no content.<br><a href=\"%s\">Return to the homepage</a>."
 msgstr ""
 
-#: blocks/build/lang-switch/block.json
-#: blocks/src/lang-switch/block.json
+#: assets/blocks/blocks/lang-switch/block.json
+#: src/blocks/lang-switch/block.json
 msgctxt "block title"
 msgid "Languages switcher"
 msgstr ""
 
-#: blocks/build/lang-switch/block.json
-#: blocks/src/lang-switch/block.json
+#: assets/blocks/blocks/lang-switch/block.json
+#: src/blocks/lang-switch/block.json
 msgctxt "block description"
 msgid "Add a link to the related article in the alternate language"
 msgstr ""
 
-#: blocks/build/menu-fetcher/block.json
-#: blocks/src/menu-fetcher/block.json
+#: assets/blocks/blocks/menu-fetcher/block.json
+#: src/blocks/menu-fetcher/block.json
 msgctxt "block title"
 msgid "Menu fetcher"
 msgstr ""
 
-#: blocks/build/menu-fetcher/block.json
-#: blocks/src/menu-fetcher/block.json
+#: assets/blocks/blocks/menu-fetcher/block.json
+#: src/blocks/menu-fetcher/block.json
 msgctxt "block description"
 msgid "Display a classic menu"
 msgstr ""
 
-#: blocks/build/post-taxonomies/block.json
-#: blocks/src/post-taxonomies/block.json
-#: blocks/template/block.json
+#: assets/blocks/blocks/post-taxonomies/block.json
+#: src/blocks/post-taxonomies/block.json
 msgctxt "block title"
 msgid "Post terms"
 msgstr ""
 
-#: blocks/build/post-taxonomies/block.json
-#: blocks/src/post-taxonomies/block.json
-#: blocks/template/block.json
+#: assets/blocks/blocks/post-taxonomies/block.json
+#: src/blocks/post-taxonomies/block.json
 msgctxt "block description"
 msgid "Display a list of a post's terms of s specific taxonomy"
 msgstr ""
@@ -113,6 +126,11 @@ msgstr ""
 #: theme.json
 msgctxt "Color name"
 msgid "Neutral 000 (text)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral 100"
 msgstr ""
 
 #: theme.json
@@ -188,6 +206,11 @@ msgstr ""
 #: theme.json
 msgctxt "Font size name"
 msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium-Large"
 msgstr ""
 
 #: theme.json

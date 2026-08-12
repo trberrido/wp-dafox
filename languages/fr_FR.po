@@ -41,37 +41,36 @@ msgctxt "Pattern description"
 msgid "Content of the 404 template"
 msgstr ""
 
-#: inc/seo.php:18
+#: functions/seo.php:18
 #: patterns/content-404.php:17
 msgid "Page not found"
 msgstr "Aucun contenu"
 
 #: patterns/content-404.php:24
+#, php-format
 msgid "Error <em>404</em>: This page has no content.<br><a href=\"%s\">Return to the homepage</a>."
 msgstr "Erreur <em>404</em> : cette page n’a aucun contenu.<br><a href=\"%s\">Revenir à la page d'accueil</a>."
 
-#: blocks/build/lang-switch/block.json
-#: blocks/src/lang-switch/block.json
+#: assets/blocks/blocks/lang-switch/block.json
+#: src/blocks/lang-switch/block.json
 msgctxt "block title"
 msgid "Languages switcher"
 msgstr ""
 
-#: blocks/build/lang-switch/block.json
-#: blocks/src/lang-switch/block.json
+#: assets/blocks/blocks/lang-switch/block.json
+#: src/blocks/lang-switch/block.json
 msgctxt "block description"
 msgid "Add a link to the related article in the alternate language"
 msgstr ""
 
-#: blocks/build/post-taxonomies/block.json
-#: blocks/src/post-taxonomies/block.json
-#: blocks/template/block.json
+#: assets/blocks/blocks/post-taxonomies/block.json
+#: src/blocks/post-taxonomies/block.json
 msgctxt "block title"
 msgid "Post terms"
 msgstr ""
 
-#: blocks/build/post-taxonomies/block.json
-#: blocks/src/post-taxonomies/block.json
-#: blocks/template/block.json
+#: assets/blocks/blocks/post-taxonomies/block.json
+#: src/blocks/post-taxonomies/block.json
 msgctxt "block description"
 msgid "Display a list of a post's terms of s specific taxonomy"
 msgstr ""
@@ -210,14 +209,38 @@ msgstr ""
 msgid "More +"
 msgstr "Voir +"
 
-#: blocks/build/menu-fetcher/block.json
-#: blocks/src/menu-fetcher/block.json
+#: assets/blocks/blocks/menu-fetcher/block.json
+#: src/blocks/menu-fetcher/block.json
 msgctxt "block title"
 msgid "Menu fetcher"
 msgstr ""
 
-#: blocks/build/menu-fetcher/block.json
-#: blocks/src/menu-fetcher/block.json
+#: assets/blocks/blocks/menu-fetcher/block.json
+#: src/blocks/menu-fetcher/block.json
 msgctxt "block description"
 msgid "Display a classic menu"
+msgstr ""
+
+#: patterns/btn-home.php
+msgctxt "Pattern title"
+msgid "Button Home"
+msgstr ""
+
+#: patterns/btn-home.php
+msgctxt "Pattern description"
+msgid "Basic Back Home button"
+msgstr ""
+
+#: patterns/btn-home.php:14
+msgid "← Back Home"
+msgstr "← Retour Accueil"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral 100"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium-Large"
 msgstr ""

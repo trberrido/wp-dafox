@@ -1,0 +1,27 @@
+@use 'common/link.scss' as link;
+
+.df-btn-home { display: none }
+
+@media screen and (max-width: 49rem){
+	.df-btn-home {
+		position: absolute;
+		top: var(--wp--preset--spacing--400);
+		left: var(--wp--preset--spacing--500);
+		z-index: 10;
+		display: inline-block;
+		@include link.button;
+		background-color: var(--wp--preset--color--neutral-700);
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 30rem){
+	.df-btn-home {
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: none;
+		padding: var(--wp--preset--spacing--100) var(--wp--preset--spacing--200);
+		font-size: var(--wp--preset--font-size--sm);
+	}
+}
