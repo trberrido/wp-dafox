@@ -121,6 +121,11 @@
 					"slug": "md"
 				},
 				{
+					"name": "Medium-Large",
+					"size": "1.25rem",
+					"slug": "md-lg"
+				},
+				{
 					"name": "Large",
 					"size": "1.5rem",
 					"slug": "lg"
@@ -186,7 +191,7 @@
 		}
 	],
 	"styles":{
-		"css": ".wp-site-blocks { max-width: 120rem }",
+		"css": ".wp-site-blocks { max-width: 120rem };",
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--default)",
 			"fontSize": "var(--wp--preset--font-size--md)",

@@ -35,8 +35,7 @@
 			.df-see-more {
 				opacity: 0;
 				transition: opacity .2s;
-				border: 1px solid var(--wp--preset--color--neutral-500);
-				padding: var(--wp--preset--spacing--100) var(--wp--preset--spacing--300);
+				@include link.button;
 				display: inline-block;
 			}
 

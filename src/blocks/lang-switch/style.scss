@@ -5,6 +5,7 @@
 	z-index: 5;
 	display: flex;
 	flex-direction: row;
+	margin: 0;
 
 	.wp-block-df-lang-switch__item + .wp-block-df-lang-switch__item::before {
 		content: '|';

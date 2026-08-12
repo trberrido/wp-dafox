@@ -7,10 +7,15 @@ p > em {
 	padding: 0 var(--wp--preset--spacing--050);
 }
 
+p > strong {
+	font-weight: 700;
+}
+
 p.is-style-highlight {
 	font-weight: 700;
-	font-size: var(--wp--preset--font-size--xl);
-	line-height: 1.1
+	font-size: var(--wp--preset--font-size--md-lg);
+	line-height: 1.5;
+	margin-bottom: var(--wp--preset--spacing--600);
 }
 
 p.has-xl-font-size { line-height: 1.1 }

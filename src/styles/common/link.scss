@@ -12,3 +12,8 @@
 	background-color: var(--wp--preset--color--neutral-900);
 	border-radius: .25rem;
 }
+
+@mixin button {
+    border: 1px solid var(--wp--preset--color--neutral-500);
+	padding: var(--wp--preset--spacing--100) var(--wp--preset--spacing--300);
+}
