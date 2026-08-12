@@ -1,0 +1,36 @@
+.wp-site-blocks { overflow-x: hidden }
+.wp-site-blocks::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    height: 2px;
+    background: linear-gradient(
+		90deg,
+		transparent 0%,
+		#ff433a 100%
+	);
+    animation: comet 1s 1 linear;
+}
+
+@keyframes comet {
+	0% {
+		width: 0;
+		opacity: 1;
+	}
+
+	70% {
+		width: 100%;
+		opacity: 1;
+	}
+
+	100% {
+		width: 100%;
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width: 49rem){
+	.df-post-content { flex-direction: column-reverse }
+}
